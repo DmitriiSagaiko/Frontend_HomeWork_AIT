@@ -1,11 +1,11 @@
 body {
-    background-image: url("/background_index.jpg") ;
+  background-image: url("background_index.jpg");
 }
 
 .orderedList {
-   font-size: 25px;
-   color: red;
+  font-size: 25px;
+  color: red;
 }
-a{
-    color: whitesmoke;
+a {
+  color: whitesmoke;
 }
