@@ -1,0 +1,51 @@
+*{
+   margin: 0px; 
+   padding: 0px;
+
+}
+p {
+    border: 3px solid red;
+}
+.mainDiv {
+    width: 500px;
+    min-height: 100vh;
+}
+header {
+    position: sticky;
+    background-color: mistyrose;
+    z-index: 100;
+    top: 0px;
+}
+span{
+    border: 3px solid blue;
+    text-decoration: underline;
+}
+footer{
+    background-color: mistyrose;
+    position: sticky;
+    bottom: 0px;
+    min-height: 50px;
+}
+main{
+    position: relative;
+}
+.modal{
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(125, 125, 125, 0.1);
+    position: fixed;
+}
+ul :nth-child(2) {
+    visibility: hidden;
+}
+ul :nth-child(3) {
+    display: none;
+}
+
+.square1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    border: 3px solid black;
+}
