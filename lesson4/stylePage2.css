@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+*,p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.banner{
+  max-width: 100%;
+}
+header{
+  position: relative;
+  top: 0px;
+}
+
+main {
+  width: 1000px;
+}
+
+.logo{
+  position: absolute;
+  bottom: 10px;
+  width: 140px;
+  left: 200px;
+}
+.play{
+  position: absolute;
+  bottom: 13px;
+  left: 370px;
+}
+.online{
+  position: absolute;
+  bottom: 15px;
+  font-weight: 500;
+  color: rgba(235, 233, 233, 0.7);
+  left: 395px;
+}
+.oscar{
+  position: absolute;
+  bottom: 15px;
+  left: 550px;
+}
+.oscarText{
+  position: absolute;
+  bottom: 15px;
+  color: rgba(235, 233, 233, 0.7);
+  font-weight: 500;
+  left: 600px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+

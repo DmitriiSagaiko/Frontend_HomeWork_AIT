@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("imagebanner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 25px;
+}
+
+.text{
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+.objects {
+  z-index: 100;
+  width: 150px;
+  height: 100px;
+}
