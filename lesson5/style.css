@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/56884664328709.5ace76da9de89.png");
+  width: 100%;
+  min-height: 120px;
+  /* прибивает фон чтобы он всегда равнялся по центру */
+  background-position: center, center;
+  /* если cover - картинка обрезаеься и масштабируется
+    если contain - создаются дубликаты */
+  background-size: cover;
+
+  position: sticky;
+  top: 0px;
+  align-items: flex-end;
+  padding: 20px;
+  z-index: 999;
+}
+nav {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav > div > p,
+img,
+input {
+  color: white;
+  opacity: 90%;
+  white-space: nowrap;
+}
+nav > div {
+  display: flex;
+  /* cursor pointer - говорит что это может быть ссылка, меняется стрелка на пальчик */
+  cursor: pointer;
+}
+.logo {
+  height: 30px;
+}
+.navInput {
+  height: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  height: 100px;
+  width: 100%;
+  background-image: url("https://i.redd.it/c80pgq3hee331.jpg");
+  background-position: center, center;
+  background-size: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  justify-content: center;
+}
+
+.photo {
+  padding: 15px;
+  width: 300px;
+  max-width: 80%;
+  height: 500px;
+  overflow: hidden;
+}
+.photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 590px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .navInput{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .navPlay,.navOscar,.navInput{
+    display: none;
+  }
+  nav{
+    justify-content: center;
+  }
+}
+
+
+
+

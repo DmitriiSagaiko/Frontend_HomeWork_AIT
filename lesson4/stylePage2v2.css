@@ -8,21 +8,42 @@
 header {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   background-image: url("imagebanner.jpeg");
-  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 120px;
+  /* прибивает фон чтобы он всегда равнялся по центру */
+  background-position: center, center;
+  /* если cover - картинка обрезаеься и масштабируется
+    если contain - создаются дубликаты */
   background-size: cover;
-  gap: 25px;
-}
 
-.text{
-    font-size: 15px;
-    color: white;
-    font-weight: 500;
+  position: sticky;
+  top: 0px;
+  align-items: flex-end;
+  padding: 20px;
 }
-
-.objects {
-  z-index: 100;
-  width: 150px;
-  height: 100px;
+nav {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav > div > p,
+img,
+input {
+  color: white;
+  opacity: 50%;
+  white-space: nowrap;
+}
+nav > div {
+  display: flex;
+  /* cursor pointer - говорит что это может быть ссылка, меняется стрелка на пальчик */
+  cursor: pointer;
+}
+.logo{
+  height: 30px;
+}
+.navInput{
+  height: 20px;
 }
