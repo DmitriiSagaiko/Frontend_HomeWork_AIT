@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.card1, .card2{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.card1 > .rate{
+    width: 50px;
+    height: 20px;
+    background-color: rgb(59,179,58);
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: wheat;
+    text-align: center;
+}
+.card1 > .ticket {
+    width: 80px;
+    height: 20px;
+    background-color: rgb(255,86,0);
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    text-align: center;
+    color: white;
+}
+
+.card2 > .rate{
+    width: 50px;
+    height: 20px;
+    background-color: rgb(255,0,0);
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: wheat;
+    text-align: center;
+}
+
+.card2 > .ticket {
+    width: 80px;
+    height: 20px;
+    background-color: rgb(255,86,0);
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+    text-align: center;
+    color: white;
+}

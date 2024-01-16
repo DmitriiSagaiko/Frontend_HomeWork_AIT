@@ -1,12 +1,22 @@
 * {
   font-family: "Tektur", sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-main {
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+main > .info {
   border: 5px solid red;
   width: 500px;
   background-color: goldenrod;
   margin: auto;
+  margin-top: 25px;
+  flex: 1
 }
 .myImage {
   margin-top: 5px;
@@ -14,9 +24,66 @@ main {
 
 .myInfo li {
   text-align: left;
+  margin-left: 25px;
 }
 a:hover {
   color: red;
   font-size: larger;
   text-decoration: wavy;
+}
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/082/615/small/header-with-black-and-blue-overlapped-arrows-abstract-modern-banner-with-place-for-your-text-material-design-abstract-widescreen-background-vector.jpg");
+  background-position: center;
+  background-repeat: cover;
+  border-bottom: 100px;
+  text-align: center;
+}
+header > h1 {
+  color: wheat;
+  text-align: center;
+  padding: 25px;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-image: url("https://t3.ftcdn.net/jpg/05/86/23/24/360_F_586232418_7DBXOQZ8Nh9yJmjtSnrDsAhzcMJwe3zb.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+  main > .info{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: lightcoral;
+  }
+  main > .info{
+    width: 300px;
+  }
+  .myImage {
+    display: none;
+  }
+  header > h1 {
+    padding: 10px;
+  }
 }
