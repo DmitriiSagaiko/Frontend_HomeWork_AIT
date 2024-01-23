@@ -25,7 +25,6 @@ formElement.addEventListener("submit", (event) => {
   deleteThisElement.innerText = "удалить покупку";
   deleteThisElement.id = buttonCounter;
 
-  map.set(buttonCounter, textElement)
   deleteThisElement.onclick = deleteElement
   buttonCounter++;
 
