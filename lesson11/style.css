@@ -1,0 +1,12 @@
+h1 {
+    color: red;
+}
+body {
+    background-color: bisque;
+}
+
+input, button {
+    border: solid 2px purple;
+    border-radius: 25px;
+    font-size: large;
+}

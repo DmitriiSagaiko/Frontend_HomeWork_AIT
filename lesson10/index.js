@@ -42,6 +42,9 @@ newCars.forEach((car, index, array) => {
   }
 });
 console.log(newCars);
+console.log(cars);
+const deepCope = structuredClone(cars);
+console.log(deepCope);
 
 //Task 7
 
