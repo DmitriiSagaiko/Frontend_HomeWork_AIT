@@ -1,9 +1,8 @@
 const formElement = document.getElementById("form");
 
-// const addButton = document.getElementById("")
+
 const productsElements = document.getElementById("products");
 
-const map = new Map();
 let buttonCounter = 0;
 
 formElement.addEventListener("submit", (event) => {
