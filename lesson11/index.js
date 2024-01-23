@@ -16,14 +16,14 @@ formElement.addEventListener("submit", (event) => {
 
   const textElement = document.createElement("p");
   textElement.innerText = ` ${product.product} в количестве ${product.amount} штук`;
-  textElement.style.width = "300px";
+  textElement.style.width = "600px";
   const deleteThisElement = document.createElement("button");
-  deleteThisElement.style.width = "25px";
+  deleteThisElement.style.width = "150px";
   deleteThisElement.style.height = "25px";
   deleteThisElement.style.backgroundColor = "red";
   deleteThisElement.style.textAlign = "left";
   deleteThisElement.style.marginLeft = "10px";
-  deleteThisElement.innerText = "X";
+  deleteThisElement.innerText = "удалить покупку";
   deleteThisElement.id = buttonCounter;
 
   map.set(buttonCounter, textElement)
