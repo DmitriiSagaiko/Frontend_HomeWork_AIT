@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clients</title>
     <link rel="stylesheet" href="clients.css" />
-    <script src="clients.js"></script>
+    <script defer src="clients.js"></script>
   </head>
   <body>
     <header>
@@ -14,10 +14,15 @@
     </header>
     <main>
         <div class="buttonDiv">
-            <button id="button">Запросить контакты</button>
+          <form id="form">
+            <input type="text" name="name" id="input" required placeholder="Введите имя (Name1-Name8)" class="name">
+            <button type="submit" id="button">Запросить контакты</button>
+          </form>
+
         </div>
 
-        <div class="clients">
+        <div class="clients" id="clients">
+          <span class="loader" id="loader"></span>
 
         </div>
     </main>
